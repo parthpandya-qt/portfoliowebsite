@@ -540,15 +540,6 @@ section {
     gap: 12px;
 }
 
-.skill-level {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--text-muted);
-}
-
-.skills-section ul li:hover .skill-level {
-    color: var(--secondary);
-}
 
 .skill-bar-container {
     width: 100%;
