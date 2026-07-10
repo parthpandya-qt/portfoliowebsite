@@ -541,35 +541,6 @@ section {
 }
 
 
-.skill-bar-container {
-    width: 100%;
-    height: 5px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.skill-bar {
-    height: 100%;
-    border-radius: 10px;
-    transition: width 1s ease-in-out;
-}
-
-/* Custom gradients for skill categories */
-.skills-section:nth-child(1) .skill-bar {
-    background: var(--primary-gradient);
-    box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
-}
-
-.skills-section:nth-child(2) .skill-bar {
-    background: var(--secondary-gradient);
-    box-shadow: 0 0 8px rgba(6, 182, 212, 0.4);
-}
-
-.skills-section:nth-child(3) .skill-bar {
-    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
-    box-shadow: 0 0 8px rgba(168, 85, 247, 0.4);
-}
 
 .skillphoto {
     width: 24px;
