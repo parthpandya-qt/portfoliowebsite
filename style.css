@@ -607,40 +607,6 @@ section {
     background: relative;
 }
 
-.project-filter-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: -20px;
-    margin-bottom: 45px;
-    flex-wrap: wrap;
-}
-
-.filter-btn {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    color: var(--text-secondary);
-    padding: 10px 24px;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition-normal);
-}
-
-.filter-btn:hover {
-    color: var(--text-primary);
-    border-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
-
-.filter-btn.active {
-    background: var(--primary-gradient);
-    color: white;
-    border: none;
-    box-shadow: var(--shadow-glow);
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -662,9 +628,6 @@ section {
     animation: fadeIn 0.4s ease-in-out;
 }
 
-.project-card.hidden {
-    display: none !important;
-}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }

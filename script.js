@@ -101,34 +101,4 @@ document.addEventListener('DOMContentLoaded', () => {
             visitCountEl.textContent = currentCount.toLocaleString();
         }, 30);
     }
-
-    // --- Projects Category Filtering ---
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    if (filterButtons.length > 0 && projectCards.length > 0) {
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-                button.classList.add('active');
-
-                const filterValue = button.getAttribute('data-filter');
-
-                projectCards.forEach(card => {
-                    const category = card.getAttribute('data-category');
-                    if (filterValue === 'all' || category === filterValue) {
-                        card.classList.remove('hidden');
-                        // Reset animation
-                        card.style.animation = 'none';
-                        card.offsetHeight; // trigger reflow
-                        card.style.animation = '';
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            });
-        });
-    }
 });
